@@ -1,0 +1,175 @@
+.admin-login-page {
+  min-height: calc(100vh - 80px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 20px;
+  background: #f8fafc;
+}
+
+.admin-login-card {
+  width: 100%;
+  max-width: 430px;
+  background: #ffffff;
+  padding: 40px;
+  border-radius: 16px;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 15px 40px rgba(15, 23, 42, 0.08);
+}
+
+.admin-login-logo {
+  width: 65px;
+  height: 65px;
+  margin: 0 auto 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #e0f2fe;
+  border-radius: 50%;
+  font-size: 30px;
+}
+
+.admin-login-card h1 {
+  margin: 0;
+  text-align: center;
+  color: #0f172a;
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.admin-login-subtitle {
+  margin: 8px 0 30px;
+  text-align: center;
+  color: #64748b;
+  font-size: 14px;
+}
+
+.admin-form-group {
+  margin-bottom: 20px;
+}
+
+.admin-form-group label {
+  display: block;
+  margin-bottom: 7px;
+  color: #334155;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.admin-form-group input {
+  width: 100%;
+  padding: 12px 14px;
+  border: 1px solid #cbd5e1;
+  border-radius: 7px;
+  outline: none;
+  background: #ffffff;
+  color: #0f172a;
+  font-size: 14px;
+  transition: 0.3s ease;
+}
+
+.admin-form-group input:focus {
+  border-color: #0ea5e9;
+  box-shadow: 0 0 0 3px rgba(14, 165, 233, 0.12);
+}
+
+.admin-login-submit-btn {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 7px;
+  background: #0f172a;
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.admin-login-submit-btn:hover {
+  background: #0ea5e9;
+}
+
+.back-login-btn {
+  width: 100%;
+  margin-top: 15px;
+  padding: 10px;
+  border: none;
+  background: transparent;
+  color: #0284c7;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.back-login-btn:hover {
+  color: #0369a1;
+}
+
+/* Dark Mode */
+
+.dark-mode .admin-login-page {
+  background: #071521;
+}
+
+.dark-mode .admin-login-card {
+  background: #0b1f33;
+  border-color: #12304a;
+  box-shadow: none;
+}
+
+.dark-mode .admin-login-logo {
+  background: #12304a;
+}
+
+.dark-mode .admin-login-card h1 {
+  color: #f8fafc;
+}
+
+.dark-mode .admin-login-subtitle {
+  color: #94a3b8;
+}
+
+.dark-mode .admin-form-group label {
+  color: #cbd5e1;
+}
+
+.dark-mode .admin-form-group input {
+  background: #071521;
+  border-color: #24506e;
+  color: #f8fafc;
+}
+
+.dark-mode .admin-form-group input::placeholder {
+  color: #64748b;
+}
+
+.dark-mode .admin-login-submit-btn {
+  background: #38bdf8;
+  color: #071521;
+}
+
+.dark-mode .admin-login-submit-btn:hover {
+  background: #7dd3fc;
+}
+
+.dark-mode .back-login-btn {
+  color: #38bdf8;
+}
+
+/* Responsive */
+
+@media (max-width: 480px) {
+
+  .admin-login-page {
+    padding: 25px 15px;
+  }
+
+  .admin-login-card {
+    padding: 30px 22px;
+  }
+
+  .admin-login-card h1 {
+    font-size: 24px;
+  }
+}

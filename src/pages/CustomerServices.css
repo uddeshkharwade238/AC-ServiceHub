@@ -1,0 +1,351 @@
+.customer-services-page {
+  min-height: 100vh;
+  background: #f8fafc;
+  color: #334155;
+}
+
+/* ================================
+   SERVICES HEADER
+================================ */
+
+.customer-services-header {
+  background: #e0f2fe;
+  padding: 55px 20px;
+  text-align: center;
+}
+
+.customer-services-header p {
+  margin: 0;
+}
+
+.customer-services-header .section-small {
+  color: #0284c7;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  margin-bottom: 8px;
+}
+
+.customer-services-header h1 {
+  color: #0f172a;
+  font-size: 34px;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+.customer-services-header > .container > p:last-child {
+  color: #64748b;
+  font-size: 15px;
+}
+
+
+/* ================================
+   SERVICES SECTION
+================================ */
+
+.customer-services-section {
+  padding: 55px 0 70px;
+}
+
+
+/* ================================
+   SERVICE CARD
+================================ */
+
+.customer-service-card {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 14px;
+  overflow: hidden;
+  height: 100%;
+  transition: 0.3s ease;
+}
+
+.customer-service-card:hover {
+  transform: translateY(-6px);
+  border-color: #7dd3fc;
+  box-shadow: 0 12px 30px rgba(15, 23, 42, 0.10);
+}
+
+
+/* ================================
+   SERVICE IMAGE
+================================ */
+
+.customer-service-image {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  display: block;
+  transition: 0.4s ease;
+}
+
+.customer-service-card:hover .customer-service-image {
+  transform: scale(1.04);
+}
+
+
+/* ================================
+   SERVICE CONTENT
+================================ */
+
+.customer-service-content {
+  padding: 20px;
+}
+
+.customer-service-content h3 {
+  color: #0f172a;
+  font-size: 19px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+
+/* ================================
+   RATING
+================================ */
+
+.customer-service-rating {
+  color: #f59e0b;
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+.customer-service-rating .rating-count {
+  color: #64748b;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+
+/* ================================
+   DESCRIPTION
+================================ */
+
+.customer-service-description {
+  color: #64748b;
+  font-size: 14px;
+  line-height: 1.6;
+  min-height: 45px;
+  margin-bottom: 20px;
+}
+
+
+/* ================================
+   PRICE + DETAILS
+================================ */
+
+.customer-service-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  border-top: 1px solid #e2e8f0;
+  padding-top: 16px;
+}
+
+.customer-service-price {
+  color: #0284c7;
+  font-size: 21px;
+  font-weight: 700;
+}
+
+.customer-view-btn {
+  border: none;
+  background: #0ea5e9;
+  color: #ffffff;
+  padding: 9px 15px;
+  border-radius: 7px;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.customer-view-btn:hover {
+  background: #0284c7;
+}
+
+
+/* ================================
+   BOOK SERVICE BUTTON
+================================ */
+
+.customer-book-btn {
+  width: 100%;
+  border: 1px solid #0ea5e9;
+  background: #ffffff;
+  color: #0284c7;
+  padding: 10px 15px;
+  border-radius: 7px;
+  margin-top: 12px;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.customer-book-btn:hover {
+  background: #0ea5e9;
+  color: #ffffff;
+}
+
+
+/* ================================
+   NO SERVICES
+================================ */
+
+.no-customer-services {
+  text-align: center;
+  padding: 70px 20px;
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 14px;
+}
+
+.empty-icon {
+  font-size: 45px;
+  margin-bottom: 15px;
+}
+
+.no-customer-services h3 {
+  color: #0f172a;
+  font-size: 22px;
+  margin-bottom: 8px;
+}
+
+.no-customer-services p {
+  color: #64748b;
+  font-size: 14px;
+}
+
+
+/* ================================
+   DARK MODE
+================================ */
+
+.dark-mode .customer-services-page {
+  background: #071521;
+  color: #cbd5e1;
+}
+
+.dark-mode .customer-services-header {
+  background: #0b1f33;
+}
+
+.dark-mode .customer-services-header h1 {
+  color: #f8fafc;
+}
+
+.dark-mode .customer-services-header .section-small {
+  color: #38bdf8;
+}
+
+.dark-mode .customer-services-header > .container > p:last-child {
+  color: #94a3b8;
+}
+
+.dark-mode .customer-service-card {
+  background: #0b1f33;
+  border-color: #12304a;
+}
+
+.dark-mode .customer-service-card:hover {
+  border-color: #38bdf8;
+}
+
+.dark-mode .customer-service-content h3 {
+  color: #f8fafc;
+}
+
+.dark-mode .customer-service-rating .rating-count {
+  color: #94a3b8;
+}
+
+.dark-mode .customer-service-description {
+  color: #94a3b8;
+}
+
+.dark-mode .customer-service-bottom {
+  border-color: #12304a;
+}
+
+.dark-mode .customer-service-price {
+  color: #38bdf8;
+}
+
+.dark-mode .customer-book-btn {
+  background: #0b1f33;
+  color: #38bdf8;
+  border-color: #38bdf8;
+}
+
+.dark-mode .customer-book-btn:hover {
+  background: #38bdf8;
+  color: #071521;
+}
+
+.dark-mode .no-customer-services {
+  background: #0b1f33;
+  border-color: #12304a;
+}
+
+.dark-mode .no-customer-services h3 {
+  color: #f8fafc;
+}
+
+.dark-mode .no-customer-services p {
+  color: #94a3b8;
+}
+
+
+/* ================================
+   RESPONSIVE
+================================ */
+
+@media (max-width: 768px) {
+
+  .customer-services-header {
+    padding: 45px 15px;
+  }
+
+  .customer-services-header h1 {
+    font-size: 28px;
+  }
+
+  .customer-services-section {
+    padding: 40px 0 55px;
+  }
+
+  .customer-service-image {
+    height: 200px;
+  }
+
+  .customer-service-content {
+    padding: 18px;
+  }
+}
+
+@media (max-width: 480px) {
+
+  .customer-services-header h1 {
+    font-size: 25px;
+  }
+
+  .customer-service-image {
+    height: 190px;
+  }
+
+  .customer-service-bottom {
+    align-items: flex-start;
+  }
+
+  .customer-service-price {
+    font-size: 19px;
+  }
+
+  .customer-view-btn {
+    padding: 8px 12px;
+  }
+}

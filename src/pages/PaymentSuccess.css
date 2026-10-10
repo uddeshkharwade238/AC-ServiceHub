@@ -1,0 +1,376 @@
+.payment-success-page {
+  min-height: 100vh;
+  background: #f8fafc;
+  padding: 50px 0 80px;
+}
+
+.payment-success-content {
+  padding-top: 20px;
+}
+
+/* Success Card */
+
+.success-card {
+  max-width: 700px;
+  margin: auto;
+  padding: 45px;
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 18px;
+  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.07);
+  text-align: center;
+}
+
+/* Success Icon */
+
+.success-icon {
+  width: 75px;
+  height: 75px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto 20px;
+  border-radius: 50%;
+  background: #dcfce7;
+  color: #16a34a;
+  font-size: 38px;
+  font-weight: 700;
+  border: 5px solid #f0fdf4;
+}
+
+.success-label {
+  margin-bottom: 8px;
+  color: #16a34a;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+}
+
+.success-card h1 {
+  margin-bottom: 12px;
+  color: #0f172a;
+  font-size: 34px;
+  font-weight: 700;
+}
+
+.success-message {
+  max-width: 560px;
+  margin: 0 auto 25px;
+  color: #64748b;
+  font-size: 15px;
+  line-height: 1.7;
+}
+
+/* Booking ID */
+
+.booking-id-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 450px;
+  margin: 0 auto 30px;
+  padding: 14px 18px;
+  border: 1px solid #bae6fd;
+  border-radius: 10px;
+  background: #f0f9ff;
+}
+
+.booking-id-box span {
+  color: #64748b;
+  font-size: 13px;
+}
+
+.booking-id-box strong {
+  color: #0284c7;
+  font-size: 15px;
+}
+
+/* Details */
+
+.success-details {
+  padding: 25px;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  text-align: left;
+}
+
+.success-details h2 {
+  margin-bottom: 18px;
+  color: #0f172a;
+  font-size: 20px;
+}
+
+.success-detail-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 12px 0;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.success-detail-row:last-child {
+  border-bottom: none;
+}
+
+.success-detail-row span {
+  color: #64748b;
+  font-size: 14px;
+}
+
+.success-detail-row strong {
+  color: #334155;
+  font-size: 14px;
+  text-align: right;
+}
+
+.success-detail-row.total-row {
+  margin-top: 5px;
+  padding-top: 18px;
+  border-top: 1px solid #cbd5e1;
+}
+
+.success-detail-row.total-row span {
+  color: #0f172a;
+  font-weight: 700;
+}
+
+.success-detail-row.total-row strong {
+  color: #0ea5e9;
+  font-size: 20px;
+}
+
+/* Status */
+
+.success-status {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  margin-top: 22px;
+  padding: 16px;
+  border: 1px solid #86efac;
+  border-radius: 10px;
+  background: #f0fdf4;
+  text-align: left;
+}
+
+.success-status > span {
+  color: #16a34a;
+  font-size: 19px;
+  font-weight: 700;
+}
+
+.success-status strong {
+  color: #166534;
+  font-size: 14px;
+}
+
+.success-status p {
+  margin: 5px 0 0;
+  color: #4d7c5a;
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+/* Buttons */
+
+.success-actions {
+  display: flex;
+  gap: 12px;
+  margin-top: 25px;
+}
+
+.my-bookings-btn,
+.dashboard-btn {
+  flex: 1;
+  padding: 13px 18px;
+  border-radius: 9px;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.my-bookings-btn {
+  border: none;
+  background: #0ea5e9;
+  color: #ffffff;
+}
+
+.my-bookings-btn:hover {
+  background: #0284c7;
+  transform: translateY(-1px);
+}
+
+.dashboard-btn {
+  border: 1px solid #cbd5e1;
+  background: #ffffff;
+  color: #475569;
+}
+
+.dashboard-btn:hover {
+  background: #f8fafc;
+  border-color: #94a3b8;
+}
+
+/* Not Found */
+
+.payment-success-not-found {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  background: #f8fafc;
+}
+
+.payment-success-not-found h2 {
+  color: #0f172a;
+}
+
+.payment-success-not-found button {
+  border: none;
+  border-radius: 8px;
+  padding: 12px 22px;
+  background: #0ea5e9;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+/* Dark Mode */
+
+body.dark-mode .payment-success-page {
+  background: #071521;
+}
+
+body.dark-mode .success-card {
+  background: #0b1f33;
+  border-color: #12304a;
+  box-shadow: none;
+}
+
+body.dark-mode .success-card h1 {
+  color: #f8fafc;
+}
+
+body.dark-mode .success-message {
+  color: #94a3b8;
+}
+
+body.dark-mode .booking-id-box {
+  background: #102b42;
+  border-color: #24506e;
+}
+
+body.dark-mode .booking-id-box span {
+  color: #94a3b8;
+}
+
+body.dark-mode .booking-id-box strong {
+  color: #38bdf8;
+}
+
+body.dark-mode .success-details {
+  border-color: #24506e;
+}
+
+body.dark-mode .success-details h2 {
+  color: #f8fafc;
+}
+
+body.dark-mode .success-detail-row {
+  border-color: #12304a;
+}
+
+body.dark-mode .success-detail-row span {
+  color: #94a3b8;
+}
+
+body.dark-mode .success-detail-row strong {
+  color: #e2e8f0;
+}
+
+body.dark-mode .success-detail-row.total-row {
+  border-top-color: #36516a;
+}
+
+body.dark-mode .success-detail-row.total-row span {
+  color: #f8fafc;
+}
+
+body.dark-mode .success-status {
+  background: #0b2a1b;
+  border-color: #166534;
+}
+
+body.dark-mode .success-status strong {
+  color: #86efac;
+}
+
+body.dark-mode .success-status p {
+  color: #86a98f;
+}
+
+body.dark-mode .dashboard-btn {
+  background: #0b1f33;
+  border-color: #36516a;
+  color: #cbd5e1;
+}
+
+body.dark-mode .dashboard-btn:hover {
+  background: #12304a;
+}
+
+body.dark-mode .payment-success-not-found {
+  background: #071521;
+}
+
+body.dark-mode .payment-success-not-found h2 {
+  color: #f8fafc;
+}
+
+/* Responsive */
+
+@media (max-width: 576px) {
+
+  .payment-success-page {
+    padding: 30px 0 50px;
+  }
+
+  .success-card {
+    padding: 28px 20px;
+    border-radius: 14px;
+  }
+
+  .success-card h1 {
+    font-size: 28px;
+  }
+
+  .success-message {
+    font-size: 14px;
+  }
+
+  .success-details {
+    padding: 20px 16px;
+  }
+
+  .success-detail-row {
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .success-detail-row strong {
+    text-align: left;
+  }
+
+  .success-actions {
+    flex-direction: column;
+  }
+
+  .booking-id-box {
+    flex-direction: column;
+    gap: 5px;
+    align-items: flex-start;
+  }
+
+}

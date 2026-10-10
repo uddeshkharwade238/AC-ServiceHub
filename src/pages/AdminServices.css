@@ -1,0 +1,508 @@
+.admin-services-page {
+  min-height: calc(100vh - 70px);
+  background: #f8fafc;
+  transition: 0.3s ease;
+}
+
+.admin-services-content {
+  padding: 45px 0 70px;
+}
+
+
+/* Header */
+
+.admin-services-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 25px;
+  margin-bottom: 30px;
+}
+
+.admin-services-label {
+  color: #0284c7;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin-bottom: 8px;
+}
+
+.admin-services-header h1 {
+  color: #0f172a;
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.admin-services-header p:last-child {
+  color: #64748b;
+  margin: 0;
+}
+
+.add-service-btn {
+  border: none;
+  background: #0ea5e9;
+  color: #ffffff;
+  padding: 12px 20px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s ease;
+  white-space: nowrap;
+}
+
+.add-service-btn:hover {
+  background: #0284c7;
+  transform: translateY(-1px);
+}
+
+
+/* Stats */
+
+.admin-service-stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin-bottom: 25px;
+}
+
+.service-stat-card {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.service-stat-card > span {
+  width: 48px;
+  height: 48px;
+  border-radius: 10px;
+  background: #e0f2fe;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+}
+
+.service-stat-card h3 {
+  color: #0f172a;
+  margin: 0 0 3px;
+  font-size: 24px;
+}
+
+.service-stat-card p {
+  color: #64748b;
+  margin: 0;
+  font-size: 14px;
+}
+
+
+/* Search */
+
+.service-search-box {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 10px;
+  padding: 12px;
+  margin-bottom: 25px;
+}
+
+.service-search-box input {
+  width: 100%;
+  border: none;
+  outline: none;
+  color: #334155;
+  font-size: 15px;
+  background: transparent;
+}
+
+.service-search-box input::placeholder {
+  color: #94a3b8;
+}
+
+
+/* Form */
+
+.service-form-card {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 25px;
+  margin-bottom: 30px;
+}
+
+.service-form-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 25px;
+}
+
+.service-form-header h2 {
+  color: #0f172a;
+  font-size: 22px;
+  margin: 0;
+}
+
+.service-form-header button {
+  border: none;
+  background: #f1f5f9;
+  color: #475569;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.service-form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group.full-width {
+  grid-column: 1 / -1;
+}
+
+.form-group label {
+  color: #334155;
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 7px;
+}
+
+.form-group input,
+.form-group textarea,
+.form-group select {
+  width: 100%;
+  border: 1px solid #cbd5e1;
+  border-radius: 7px;
+  padding: 11px 12px;
+  outline: none;
+  color: #334155;
+  background: #ffffff;
+  font-size: 14px;
+  transition: 0.3s ease;
+}
+
+.form-group textarea {
+  resize: vertical;
+}
+
+.form-group input:focus,
+.form-group textarea:focus,
+.form-group select:focus {
+  border-color: #0ea5e9;
+  box-shadow: 0 0 0 3px rgba(14, 165, 233, 0.1);
+}
+
+.service-form-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+  margin-top: 25px;
+}
+
+.cancel-service-btn,
+.save-service-btn {
+  border: none;
+  padding: 10px 18px;
+  border-radius: 7px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.cancel-service-btn {
+  background: #f1f5f9;
+  color: #475569;
+}
+
+.save-service-btn {
+  background: #0ea5e9;
+  color: #ffffff;
+}
+
+.save-service-btn:hover {
+  background: #0284c7;
+}
+
+
+/* Service Grid */
+
+.admin-services-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+}
+
+.admin-service-card {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  overflow: hidden;
+  transition: 0.3s ease;
+}
+
+.admin-service-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px rgba(15, 23, 42, 0.08);
+}
+
+.admin-service-image {
+  height: 190px;
+  position: relative;
+  overflow: hidden;
+  background: #e0f2fe;
+}
+
+.admin-service-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.no-service-image {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 45px;
+}
+
+.status-active,
+.status-inactive {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.status-active {
+  background: #dcfce7;
+  color: #166534;
+}
+
+.status-inactive {
+  background: #fee2e2;
+  color: #991b1b;
+}
+
+.admin-service-body {
+  padding: 20px;
+}
+
+.admin-service-body h3 {
+  color: #0f172a;
+  font-size: 18px;
+  margin-bottom: 8px;
+}
+
+.admin-service-body p {
+  color: #64748b;
+  font-size: 14px;
+  line-height: 1.6;
+  min-height: 45px;
+  margin-bottom: 15px;
+}
+
+.admin-service-price {
+  color: #0284c7;
+  font-size: 21px;
+  font-weight: 700;
+  margin-bottom: 17px;
+}
+
+.admin-service-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+}
+
+.admin-service-actions button {
+  border: none;
+  padding: 8px 10px;
+  border-radius: 6px;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.edit-service-btn {
+  background: #e0f2fe;
+  color: #0369a1;
+}
+
+.status-service-btn {
+  background: #f1f5f9;
+  color: #475569;
+}
+
+.delete-service-btn {
+  background: #fee2e2;
+  color: #b91c1c;
+}
+
+
+/* Empty */
+
+.no-services {
+  grid-column: 1 / -1;
+  text-align: center;
+  padding: 70px 20px;
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+}
+
+.no-services div {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+.no-services h3 {
+  color: #334155;
+  margin-bottom: 7px;
+}
+
+.no-services p {
+  color: #64748b;
+  margin: 0;
+}
+
+
+/* Dark Mode */
+
+.dark-mode .admin-services-page {
+  background: #071521;
+}
+
+.dark-mode .admin-services-header h1,
+.dark-mode .service-stat-card h3,
+.dark-mode .service-form-header h2,
+.dark-mode .admin-service-body h3 {
+  color: #f8fafc;
+}
+
+.dark-mode .admin-services-header p:last-child,
+.dark-mode .service-stat-card p,
+.dark-mode .admin-service-body p,
+.dark-mode .no-services p {
+  color: #94a3b8;
+}
+
+.dark-mode .service-stat-card,
+.dark-mode .service-search-box,
+.dark-mode .service-form-card,
+.dark-mode .admin-service-card,
+.dark-mode .no-services {
+  background: #0b1f33;
+  border-color: #12304a;
+}
+
+.dark-mode .service-stat-card > span {
+  background: #12304a;
+}
+
+.dark-mode .service-search-box input {
+  color: #e2e8f0;
+}
+
+.dark-mode .form-group label {
+  color: #cbd5e1;
+}
+
+.dark-mode .form-group input,
+.dark-mode .form-group textarea,
+.dark-mode .form-group select {
+  background: #071521;
+  border-color: #24506e;
+  color: #e2e8f0;
+}
+
+.dark-mode .service-form-header button {
+  background: #12304a;
+  color: #cbd5e1;
+}
+
+.dark-mode .cancel-service-btn {
+  background: #12304a;
+  color: #cbd5e1;
+}
+
+.dark-mode .status-service-btn {
+  background: #12304a;
+  color: #cbd5e1;
+}
+
+.dark-mode .no-services h3 {
+  color: #e2e8f0;
+}
+
+
+/* Responsive */
+
+@media (max-width: 992px) {
+
+  .admin-services-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+}
+
+@media (max-width: 768px) {
+
+  .admin-services-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .admin-service-stats {
+    grid-template-columns: 1fr;
+  }
+
+  .service-form-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .form-group.full-width {
+    grid-column: auto;
+  }
+
+}
+
+@media (max-width: 576px) {
+
+  .admin-services-content {
+    padding: 30px 0 50px;
+  }
+
+  .admin-services-header h1 {
+    font-size: 26px;
+  }
+
+  .admin-services-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .add-service-btn {
+    width: 100%;
+  }
+
+  .service-form-card {
+    padding: 18px;
+  }
+
+}

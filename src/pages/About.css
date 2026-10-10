@@ -1,0 +1,281 @@
+/* ================================
+   ABOUT PAGE
+================================ */
+
+.about-page {
+  min-height: 100vh;
+  background: #f8fafc;
+  color: #334155;
+}
+
+
+/* ================================
+   HERO
+================================ */
+
+.about-hero {
+  background: linear-gradient(
+    135deg,
+    #e0f2fe,
+    #f8fafc
+  );
+  padding: 70px 0;
+  text-align: center;
+}
+
+.about-label {
+  color: #0284c7;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 1.6px;
+  margin-bottom: 10px;
+}
+
+.about-hero h1 {
+  color: #0f172a;
+  font-size: 38px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.about-intro {
+  max-width: 650px;
+  margin: auto;
+  color: #64748b;
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+
+/* ================================
+   ABOUT CONTENT
+================================ */
+
+.about-section {
+  padding: 75px 0;
+}
+
+.about-small-title {
+  color: #0284c7;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 1.4px;
+  margin-bottom: 10px;
+}
+
+.about-section h2 {
+  color: #0f172a;
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: 18px;
+}
+
+.about-section p {
+  color: #64748b;
+  font-size: 15px;
+  line-height: 1.8;
+}
+
+
+/* ================================
+   FEATURE CARDS
+================================ */
+
+.about-feature-card {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 14px;
+  padding: 25px;
+  margin-bottom: 18px;
+  transition: 0.3s ease;
+}
+
+.about-feature-card:hover {
+  transform: translateY(-4px);
+  border-color: #7dd3fc;
+  box-shadow: 0 10px 25px rgba(15, 23, 42, 0.08);
+}
+
+.about-feature-icon {
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #e0f2fe;
+  border-radius: 10px;
+  font-size: 23px;
+  margin-bottom: 15px;
+}
+
+.about-feature-card h3 {
+  color: #0f172a;
+  font-size: 18px;
+  margin-bottom: 8px;
+}
+
+.about-feature-card p {
+  margin-bottom: 0;
+}
+
+
+/* ================================
+   WHY SECTION
+================================ */
+
+.about-why-section {
+  padding: 70px 0;
+  background: #f1f5f9;
+}
+
+.about-why-header {
+  margin-bottom: 40px;
+}
+
+.about-why-header h2 {
+  color: #0f172a;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+
+/* ================================
+   INFO CARDS
+================================ */
+
+.about-info-card {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 14px;
+  padding: 30px 25px;
+  text-align: center;
+  height: 100%;
+  transition: 0.3s ease;
+}
+
+.about-info-card:hover {
+  transform: translateY(-5px);
+  border-color: #7dd3fc;
+  box-shadow: 0 10px 25px rgba(15, 23, 42, 0.08);
+}
+
+.about-info-card span {
+  font-size: 32px;
+  display: block;
+  margin-bottom: 15px;
+}
+
+.about-info-card h3 {
+  color: #0f172a;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.about-info-card p {
+  color: #64748b;
+  font-size: 14px;
+  line-height: 1.6;
+  margin: 0;
+}
+
+
+/* ================================
+   DARK MODE
+================================ */
+
+.dark-mode .about-page {
+  background: #071521;
+  color: #cbd5e1;
+}
+
+.dark-mode .about-hero {
+  background: linear-gradient(
+    135deg,
+    #0b1f33,
+    #071521
+  );
+}
+
+.dark-mode .about-hero h1,
+.dark-mode .about-section h2,
+.dark-mode .about-why-header h2 {
+  color: #f8fafc;
+}
+
+.dark-mode .about-intro,
+.dark-mode .about-section p {
+  color: #94a3b8;
+}
+
+.dark-mode .about-feature-card,
+.dark-mode .about-info-card {
+  background: #0b1f33;
+  border-color: #12304a;
+}
+
+.dark-mode .about-feature-card:hover,
+.dark-mode .about-info-card:hover {
+  border-color: #38bdf8;
+}
+
+.dark-mode .about-feature-icon {
+  background: #12304a;
+}
+
+.dark-mode .about-feature-card h3,
+.dark-mode .about-info-card h3 {
+  color: #f8fafc;
+}
+
+.dark-mode .about-info-card p {
+  color: #94a3b8;
+}
+
+.dark-mode .about-why-section {
+  background: #0a1b2b;
+}
+
+
+/* ================================
+   RESPONSIVE
+================================ */
+
+@media (max-width: 768px) {
+
+  .about-hero {
+    padding: 55px 20px;
+  }
+
+  .about-hero h1 {
+    font-size: 30px;
+  }
+
+  .about-section {
+    padding: 55px 0;
+  }
+
+  .about-section h2,
+  .about-why-header h2 {
+    font-size: 26px;
+  }
+
+  .about-why-section {
+    padding: 55px 0;
+  }
+}
+
+@media (max-width: 480px) {
+
+  .about-hero h1 {
+    font-size: 26px;
+  }
+
+  .about-intro {
+    font-size: 14px;
+  }
+
+  .about-feature-card {
+    padding: 20px;
+  }
+
+}

@@ -1,0 +1,199 @@
+.customer-navbar {
+  background: #ffffff;
+  border-bottom: 1px solid #e2e8f0;
+  padding: 15px 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  transition: 0.3s ease;
+}
+
+.customer-navbar-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 25px;
+}
+
+/* Logo */
+
+.customer-brand {
+  color: #0f172a;
+  font-size: 22px;
+  font-weight: 700;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.customer-brand span {
+  margin-right: 5px;
+}
+
+.customer-brand strong {
+  color: #0ea5e9;
+}
+
+/* Links */
+
+.customer-nav-links {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.customer-nav-links button {
+  border: none;
+  background: transparent;
+  color: #475569;
+  padding: 9px 12px;
+  border-radius: 6px;
+  font-size: 15px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.customer-nav-links button:hover {
+  color: #0284c7;
+  background: #e0f2fe;
+}
+
+/* Right Side */
+
+.customer-nav-right {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.customer-name {
+  color: #334155;
+  font-size: 14px;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+/* Theme */
+
+.customer-theme-btn {
+  width: 38px;
+  height: 38px;
+  border: 1px solid #cbd5e1;
+  background: #ffffff;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 16px;
+  transition: 0.3s ease;
+}
+
+.customer-theme-btn:hover {
+  background: #e0f2fe;
+  border-color: #0ea5e9;
+}
+
+/* Logout */
+
+.customer-logout-btn {
+  border: none;
+  background: #0f172a;
+  color: #ffffff;
+  padding: 9px 17px;
+  border-radius: 7px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.customer-logout-btn:hover {
+  background: #0ea5e9;
+}
+
+/* Dark Mode */
+
+.dark-mode .customer-navbar {
+  background: #071521;
+  border-bottom-color: #12304a;
+}
+
+.dark-mode .customer-brand {
+  color: #f8fafc;
+}
+
+.dark-mode .customer-brand strong {
+  color: #38bdf8;
+}
+
+.dark-mode .customer-nav-links button {
+  color: #cbd5e1;
+}
+
+.dark-mode .customer-nav-links button:hover {
+  color: #38bdf8;
+  background: #0b1f33;
+}
+
+.dark-mode .customer-name {
+  color: #e2e8f0;
+}
+
+.dark-mode .customer-theme-btn {
+  background: #0b1f33;
+  border-color: #24506e;
+}
+
+.dark-mode .customer-logout-btn {
+  background: #38bdf8;
+  color: #071521;
+}
+
+.dark-mode .customer-logout-btn:hover {
+  background: #7dd3fc;
+}
+
+/* Responsive */
+
+@media (max-width: 1100px) {
+
+  .customer-navbar-inner {
+    flex-wrap: wrap;
+  }
+
+  .customer-nav-links {
+    order: 3;
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 768px) {
+
+  .customer-name {
+    display: none;
+  }
+
+  .customer-nav-links {
+    overflow-x: auto;
+    justify-content: flex-start;
+  }
+
+  .customer-brand {
+    font-size: 19px;
+  }
+}
+
+@media (max-width: 480px) {
+
+  .customer-nav-right {
+    gap: 6px;
+  }
+
+  .customer-theme-btn {
+    width: 35px;
+    height: 35px;
+  }
+
+  .customer-logout-btn {
+    padding: 8px 12px;
+  }
+}

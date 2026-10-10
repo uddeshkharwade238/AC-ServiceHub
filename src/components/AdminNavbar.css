@@ -1,0 +1,208 @@
+.admin-navbar {
+  background: #ffffff;
+  border-bottom: 1px solid #e2e8f0;
+  padding: 15px 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  transition: 0.3s ease;
+}
+
+.admin-navbar-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 25px;
+}
+
+/* Logo */
+
+.admin-brand {
+  color: #0f172a;
+  font-size: 22px;
+  font-weight: 700;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.admin-brand span {
+  margin-right: 5px;
+}
+
+.admin-brand strong {
+  color: #0ea5e9;
+}
+
+
+/* Navigation */
+
+.admin-nav-links {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.admin-nav-links button {
+  border: none;
+  background: transparent;
+  color: #475569;
+  padding: 9px 11px;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.admin-nav-links button:hover {
+  color: #0284c7;
+  background: #e0f2fe;
+}
+
+
+/* Right Side */
+
+.admin-nav-right {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.admin-name {
+  color: #334155;
+  font-size: 14px;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+
+/* Theme Button */
+
+.admin-theme-btn {
+  width: 38px;
+  height: 38px;
+  border: 1px solid #cbd5e1;
+  background: #ffffff;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 16px;
+  transition: 0.3s ease;
+}
+
+.admin-theme-btn:hover {
+  background: #e0f2fe;
+  border-color: #0ea5e9;
+}
+
+
+/* Logout */
+
+.admin-logout-btn {
+  border: none;
+  background: #0f172a;
+  color: #ffffff;
+  padding: 9px 17px;
+  border-radius: 7px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.admin-logout-btn:hover {
+  background: #0ea5e9;
+}
+
+
+/* Dark Mode */
+
+.dark-mode .admin-navbar {
+  background: #071521;
+  border-bottom-color: #12304a;
+}
+
+.dark-mode .admin-brand {
+  color: #f8fafc;
+}
+
+.dark-mode .admin-brand strong {
+  color: #38bdf8;
+}
+
+.dark-mode .admin-nav-links button {
+  color: #cbd5e1;
+}
+
+.dark-mode .admin-nav-links button:hover {
+  color: #38bdf8;
+  background: #0b1f33;
+}
+
+.dark-mode .admin-name {
+  color: #e2e8f0;
+}
+
+.dark-mode .admin-theme-btn {
+  background: #0b1f33;
+  border-color: #24506e;
+}
+
+.dark-mode .admin-logout-btn {
+  background: #38bdf8;
+  color: #071521;
+}
+
+.dark-mode .admin-logout-btn:hover {
+  background: #7dd3fc;
+}
+
+
+/* Responsive */
+
+@media (max-width: 1150px) {
+
+  .admin-navbar-inner {
+    flex-wrap: wrap;
+  }
+
+  .admin-nav-links {
+    order: 3;
+    width: 100%;
+    justify-content: center;
+  }
+
+}
+
+@media (max-width: 768px) {
+
+  .admin-name {
+    display: none;
+  }
+
+  .admin-nav-links {
+    overflow-x: auto;
+    justify-content: flex-start;
+  }
+
+  .admin-brand {
+    font-size: 19px;
+  }
+
+}
+
+@media (max-width: 480px) {
+
+  .admin-nav-right {
+    gap: 6px;
+  }
+
+  .admin-theme-btn {
+    width: 35px;
+    height: 35px;
+  }
+
+  .admin-logout-btn {
+    padding: 8px 12px;
+  }
+
+}
